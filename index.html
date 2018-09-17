@@ -1,134 +1,37 @@
-<!DOCTYPE html >
-<!-- #1 #structure #document -->
+<!DOCTYPE html>
+<!-- Start with your chatter|app here -->
+
 <html>
-<head>
+    <head> 
+        <title>chatter|app</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto+Mono&subset=greek,cyrillic">
+    </head>
+    <body>  
 
-    <!-- #1 #structure #title -->
-    <title>chatter|app</title>
-
-    <!-- We need to specify the character encoding, since we use chinese characters -->
-    <meta charset="UTF-8">
-
-    <!-- #2 #css #elements -->
-    <style>
-        /* #2 #colorful #palette is:
-          * Background: #F5F5F5 (GREY 100)
-          * Primary Text: black
-          * Primary color: #3F51B5 (INDIGO)
-          * Primary color_text : white
-          * Accent color: #CDDC39 (LIME)
-          * Accent color_text: black
-          */
-        /*global styles */
-        * {
-            /* #2 #font #faces */
-            font-family: 'Arial', sans-serif;
-        }
-        body {
-            /* #2 #colorful #background */
-            background-color: #F5F5F5;
-        }
-        h1 {
-            /* #2 #colourful #app-bar */
-            background-color: #3F51B5;
-            color: white;
-        }
-        button {
-            /* #2 #colourful #plusfive */
-            background-color: #CDDC39;
-            color: black;
-            /* #2 #font capital #letters */
-            text-transform: uppercase;
-        }
-        /*styles for channel area*/
-        h2 {
-            /* #2 #colorful #channelandchat */
-            background-color: white;
-        }
-        /*styles for chat area*/
-        p {
-            /* #2 #colorful #channelandchat */
-            background-color: white;
-        }
-        strong {
-            /* #2 #font #locations need an extra element, we'll use strong for w3w locations */
-            text-transform: uppercase;
-        }
-        h3 {
-            /* #2 #font #metadata is now medium */
-            font-size: medium;
-        }
-        em {
-            /* #2 #font #remaining overrides the default italic appearance of em elements*/
-            font-size: larger;
-            font-style: normal;
-        }
-        ul{
-            list-style-type: none;
-            background-color: white;
-        }
-       
-        #tab-bar {
- 		background-color: white;
-		width: 100%;
-		}
-
-		#tab-bar img{
-		    display: block;
-		    margin: auto;
-		    padding:4px;
-		 
-		}
-		.message {
-		    width: 80%;
-		    margin-bottom: 8px;
-		    margin-left: 2.5%;
-		}
-		.message button {
-	    background-color: #CDDC39;
-	    color:black;
-	    text-transform: uppercase;
-	}
-    </style>
-
-</head>
-
-<body>
-
-<!-- channel area -->
-<!-- #1 #channels #app-bar -->
-<h1><img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="Error" style="widows: 60px;height:60px;"> chatter|app</h1>
-
-<!-- #1 #channels #topics -->
-<ul>
-	 <li>#Yummy <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="Error"></li>
-	 
-	 <li class="selected2">#SevenContinent <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Error"></li>
-	 
-	 <li>#KillerApp <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="Error"></li>
-	 
-	 <li>#FirstPersonOnMars <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Error"></li>
-	 
-	 <li>#Octoberfest <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="Error"></li>
+ <h1><img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="Error" style="widows: 60px;height:60px;">chatter|app</h1>
+ <!-- channel -->
+ 
+ <ul>
+ <li>#Yummy <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="Error"></li>
+ <li class="selected2">#SevenContinent <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Error"></li>
+ <li>#KillerApp <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="Error"></li>
+ <li>#FirstPersonOnMars <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Error"></li>
+ <li>#Octoberfest <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="Error"></li>
 </ul>
 
-
-<!-- #1 #channels #buttons -->
 <div id="tab-bar">
-	<button class="selected"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="Error">New</button>
-	
-	<button c ><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="Error">Trending</button>
-	
-	<button ><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Error">Favorites</button>
+<button class="selected"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="Error">New</button>
+<button c ><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="Error">Trending</button>
+<button ><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Error">Favorites</button>
 </div>
 
-
-<!-- chat area -->
-<!-- #1 #chat #name -->
 <hr>
+<!-- chat -->
 <h1>#SevenContinents <small>by<strong> restriction.smug.teacher </strong></small> <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Error"></h1>
 
-<div class="message">
+<div class="message own">
 <h3><strong><a href="https://w3w.co/restriction.smug.teacher" target="_blank">restriction.smug.teacher</a></strong> Mon, Ocrober 20th, 11:48 <i>50 minutes left</i> </h3>
 <p>Hello ??</p>
 <button type="button">+5 min.</button>
@@ -145,5 +48,5 @@
 <p>Where are you from ?</p>
 <button type="button">+5 min.</button>
 </div>
-</body>
+    </body>
 </html>
